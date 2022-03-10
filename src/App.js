@@ -8,11 +8,8 @@ import themes from 'themes';
 // project imports
 import NavigationScroll from 'layout/NavigationScroll';
 
-// ==============================|| APP ||============================== //
-
 const App = () => {
     const customization = useSelector((state) => state.customization);
-    console.log(customization);
     return (
         <StyledEngineProvider injectFirst>
             <ThemeProvider theme={themes(customization)}>
